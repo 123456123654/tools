@@ -1,0 +1,133 @@
+Creating an attractive and responsive homepage for a tools website involves a well-structured layout, engaging visuals, and intuitive navigation. Below is an example of HTML and CSS code for a homepage that showcases various image and PDF tools. You can further customize the content, colors, and images as needed.
+
+### HTML and CSS Code for Tools Homepage
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of image and PDF tools for optimizing, converting, and editing documents.">
+    <title>Tools Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(30% - 20px);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        .tool-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .tool-card {
+                width: calc(45% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .tool-card {
+                width: calc(100% - 20px);
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ToolHub</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#image-tools">Image Tools</a>
+        <a href="#pdf-tools">PDF Tools</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Your Ultimate Tools for Images and PDFs</h2>
+</div>
+
+<section id="image-tools" class="tools">
+    <h2>Image Tools</h2>
+    <div class="tool-card">
+        <img src="compress-image.jpg" alt="Compress Image" class="tool-img"> <!-- Replace with tool image -->
+        <h3>Image Compressor</h3>
+        <p>Optimize your images for the web with our fast and efficient compressor.</p>
+        <a href="#" class="button">Try Now</a>
+    </div>
+    <div class="tool-card">
+        <img src="resize-image.jpg" alt="Resize Image" class="tool-img"> <!-- Replace with tool image -->
+        <h3>Image Resizer</h3>
+        <p>Easily resize your images to fit any dimensions you need.</p>
+        <a href="#" class="button">Try Now</a>
+    </div>
+    <div class="tool-card">
+        <img src="convert-image.jpg" alt="Convert Image" class="tool-img"> <!-- Replace with tool image -->
+        <
